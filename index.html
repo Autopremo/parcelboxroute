@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Stockholm Parcel Delivery Transformation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+            color: #cbd5e1; /* slate-300 */
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: #94a3b8; /* slate-400 */
+            margin-top: 0.5rem;
+        }
+        .card {
+            background-color: #1e293b; /* slate-800 */
+            border-radius: 0.75rem;
+            border: 1px solid #334155; /* slate-700 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(79, 70, 229, 0.3); /* indigo-500 shadow */
+        }
+        .icon-bg {
+            background-color: #374151; /* gray-700 */
+            color: #818cf8; /* indigo-400 */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+        }
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+        .stat-label {
+            font-size: 1rem;
+            color: #94a3b8; /* slate-400 */
+            margin-top: 0.25rem;
+        }
+        .highlight {
+            color: #818cf8; /* indigo-400 */
+            font-weight: 600;
+        }
+        /* Animation for elements on scroll */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="text-center py-16 px-4">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-slate-400">The Future of Stockholm Deliveries</h1>
+        <p class="mt-4 text-lg md:text-xl text-slate-400 max-w-3xl mx-auto">A data-driven case for transforming last-mile logistics with parcel-only box routes.</p>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 md:py-20">
+
+        <!-- The Problem Section -->
+        <section class="text-center fade-in-up">
+            <h2 class="section-title">The Challenge: An Unsustainable Status Quo</h2>
+            <p class="section-subtitle max-w-3xl mx-auto">Our current model is squeezed by traffic, shifting demand, and operational bottlenecks.</p>
+            <div class="grid md:grid-cols-3 gap-8 mt-12 text-left">
+                <div class="card p-8">
+                    <div class="flex items-start gap-4">
+                        <div class="icon-bg">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 22h4"/><path d="M12 18v4"/><path d="M12 2v2"/><path d="M12 8v3"/><path d="M19 6.5A4.5 4.5 0 0 0 10 6.5"/><path d="m14.5 11.5-1.5-1.5-1.5 1.5-1.5-1.5"/><path d="M5 6.5A4.5 4.5 0 0 1 14 6.5"/><path d="m9.5 11.5 1.5-1.5 1.5 1.5 1.5-1.5"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Daytime Traffic Paralysis</h3>
+                            <p class="mt-2 text-slate-400">Peak hour congestion can <span class="highlight">more than double</span> travel times, crippling productivity and inflating costs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-8">
+                    <div class="flex items-start gap-4">
+                        <div class="icon-bg">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13a6 6 0 1 0 12 0 4 4 0 1 0-8 0 2 2 0 0 0 4 0"/><path d="M10.13 12.87A6 6 0 0 1 15.2 3.4a4.13 4.13 0 0 1 5.4 3.2 6.13 6.13 0 0 1-1.6 6.37"/><path d="M11 21H5a2 2 0 0 1-2-2v-3h6"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Inefficient Mixed Routes</h3>
+                            <p class="mt-2 text-slate-400">Our current model averages <span class="highlight">12-13 parcels/hour</span>, making profitable growth impossible.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-8">
+                    <div class="flex items-start gap-4">
+                        <div class="icon-bg">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Evolving Consumer Demand</h3>
+                            <p class="mt-2 text-slate-400"><span class="highlight">39% of Swedes</span> now prefer parcel boxes, while only 8% want traditional home delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scenario Showdown Section -->
+        <section class="mt-20 md:mt-28 fade-in-up">
+            <div class="text-center">
+                <h2 class="section-title">The Path to Profitability</h2>
+                <p class="section-subtitle max-w-3xl mx-auto">Modeling productivity over a 5-hour shift reveals a clear, superior strategy.</p>
+            </div>
+            <div class="mt-12 grid lg:grid-cols-3 gap-8 items-end">
+                <!-- Current Mixed Route -->
+                <div class="card p-8 border-t-4 border-red-500">
+                    <h3 class="text-xl font-bold text-white">Current Mixed Route</h3>
+                    <p class="text-sm text-red-400 font-semibold">THE PROBLEM</p>
+                    <div class="text-center my-8">
+                        <p class="stat-value text-red-400">12.5</p>
+                        <p class="stat-label">Parcels per Hour</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-white">~62</p>
+                        <p class="text-slate-400">Total Parcels in 5hr Shift</p>
+                    </div>
+                </div>
+
+                <!-- Daytime Box Delivery -->
+                <div class="card p-8 border-t-4 border-amber-500">
+                    <h3 class="text-xl font-bold text-white">Daytime Box Delivery</h3>
+                    <p class="text-sm text-amber-400 font-semibold">BETTER, BUT FLAWED</p>
+                    <div class="text-center my-8">
+                        <p class="stat-value text-amber-400">18</p>
+                        <p class="stat-label">Parcels per Hour</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-white">~90</p>
+                        <p class="text-slate-400">Total Parcels in 5hr Shift</p>
+                    </div>
+                </div>
+
+                <!-- Night-Only Box Delivery -->
+                <div class="card p-8 border-t-4 border-green-500 transform lg:scale-110 ring-2 ring-green-500/50">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Recommended</div>
+                    <h3 class="text-xl font-bold text-white">Night-Only Box Delivery</h3>
+                    <p class="text-sm text-green-400 font-semibold">THE SOLUTION</p>
+                    <div class="text-center my-8">
+                        <p class="stat-value text-green-400">25</p>
+                        <p class="stat-label">Parcels per Hour</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-white">~125</p>
+                        <p class="text-slate-400">Total Parcels in 5hr Shift</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Power of Specialization Section -->
+        <section class="mt-20 md:mt-28 fade-in-up">
+            <div class="text-center">
+                 <h2 class="section-title">The Power of Specialization</h2>
+                <p class="section-subtitle max-w-3xl mx-auto">De-coupling routes creates two highly efficient roles from one inefficient one.</p>
+            </div>
+            <div class="mt-12 grid lg:grid-cols-2 gap-8 items-center">
+                <div class="card p-8 text-center">
+                    <div class="mx-auto w-16 h-16 flex items-center justify-center rounded-full bg-slate-700 text-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2V4"/><path d="M16 2v20"/><path d="M16 7h4"/><path d="M16 12h4"/><path d="M16 17h4"/><path d="M10 7h.01"/><path d="M10 12h.01"/><path d="M10 17h.01"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mt-4 text-white">The Newspaper Specialist</h3>
+                    <p class="mt-2 text-slate-400">Focused on rapid, predictable distribution. No parcel delays means faster routes and the ability to cover more ground in less time.</p>
+                </div>
+                <div class="card p-8 text-center">
+                     <div class="mx-auto w-16 h-16 flex items-center justify-center rounded-full bg-slate-700 text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10V5a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 5v5c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2z"/><path d="m21 10-9.5 5.25L3 10"/><path d="M3 14v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/><path d="M12 16.5 3 21"/><path d="m21 21-9-4.5"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mt-4 text-white">The Parcel Specialist</h3>
+                    <p class="mt-2 text-slate-400">An expert in nighttime navigation and efficient locker drops. This role maximizes throughput to achieve peak productivity.</p>
+                </div>
+            </div>
+            <div class="card mt-8 p-6 bg-slate-900 border-indigo-500/30">
+                <p class="text-center text-lg text-slate-300"><strong>Proof Point:</strong> Posten Norge successfully implemented this approach, reducing their total delivery routes from <span class="text-green-400 font-bold">5,000 to just 2,800</span> through specialization.</p>
+            </div>
+        </section>
+        
+        <!-- Strategic Imperatives Section -->
+        <section class="mt-20 md:mt-28 fade-in-up">
+            <div class="text-center">
+                <h2 class="section-title">Strategic Imperatives: Why Act Now?</h2>
+                <p class="section-subtitle max-w-3xl mx-auto">Market forces, competitive pressure, and financial incentives are aligned.</p>
+            </div>
+            <div class="mt-12 grid md:grid-cols-3 gap-8">
+                <div class="card p-6 text-center">
+                    <div class="icon-bg mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mt-4 text-white">Align with Consumer Demand</h3>
+                    <p class="text-sm text-slate-400 mt-1">Give the <span class="highlight">39% of Swedes</span> who prefer parcel lockers the service they want, moving away from a model only 8% desire.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="icon-bg mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H8.5A2.5 2.5 0 0 0 6 4.5V20a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9l-5-7z"/><path d="M13 2v7h7"/></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mt-4 text-white">Respond to Competition</h3>
+                    <p class="text-sm text-slate-400 mt-1">Rivals like DHL are already investing heavily, adding <span class="highlight">1,000+ new lockers</span>. We must act to avoid being left behind.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="icon-bg mx-auto">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mt-4 text-white">Unlock Financial Incentives</h3>
+                    <p class="text-sm text-slate-400 mt-1">Sweden's climate premium can subsidize EV investment by up to <span class="highlight">50,000 SEK per vehicle</span>, enabling the shift to night delivery.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="text-slate-500 text-center py-10 px-4 mt-20 border-t border-slate-800">
+        <p>&copy; 2025 | Strategic Analysis for Last-Mile Optimization</p>
+    </footer>
+
+    <script>
+        // This script adds a 'visible' class to elements when they scroll into view
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            const elementsToAnimate = document.querySelectorAll('.fade-in-up');
+            elementsToAnimate.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
